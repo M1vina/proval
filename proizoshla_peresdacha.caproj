@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3b62asyctjuaq</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="hallway" sid="210061188105446">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Михаил\Downloads\koridor1.png" />
+        </object-type>
+        <object-type name="ground" sid="781579503727880">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="554180768168443">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Door1" sid="900514882897166">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="762279488824999" speed="5">
+                    <frame duration="1" hotspotX="0.602216" hotspotY="0.537095" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\dver1.png">
+                        <collision-poly>
+                            <point x="0.448137" y="0.15256" />
+                            <point x="0.852971" y="0.146291" />
+                            <point x="0.867069" y="0.941484" />
+                            <point x="0.450151" y="0.947753" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door2" sid="608773597409638">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="803003065948204" speed="5">
+                    <frame duration="1" hotspotX="0.374214" hotspotY="0.54334" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\dver2.png">
+                        <collision-poly>
+                            <point x="0.557652" y="0.155391" />
+                            <point x="0.554507" y="0.945032" />
+                            <point x="0.111111" y="0.94926" />
+                            <point x="0.111111" y="0.156448" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Student" sid="947066655498419">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Hp" sid="759645108941497" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="396771035457169">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="929437697135083">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825148995528767" speed="5">
+                    <frame duration="1" hotspotX="0.500592" hotspotY="0.500471">
+                        <collision-poly>
+                            <point x="0.31716" y="0" />
+                            <point x="0.697041" y="0" />
+                            <point x="0.694675" y="0.998115" />
+                            <point x="0.319527" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" sid="555035704538103" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="0.504241" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\itog4.png">
+                        <collision-poly>
+                            <point x="0.31716" y="0" />
+                            <point x="0.697041" y="0" />
+                            <point x="0.694675" y="0.998115" />
+                            <point x="0.319527" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.557396" hotspotY="0.500471" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\itog8.png">
+                        <collision-poly>
+                            <point x="0.31716" y="0" />
+                            <point x="0.697041" y="0" />
+                            <point x="0.694675" y="0.998115" />
+                            <point x="0.319527" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Fall" pingpong="0" repeatcount="1" repeatto="0" sid="161986790722252" speed="5">
+                    <frame duration="1" hotspotX="0.500592" hotspotY="0.500471">
+                        <collision-poly>
+                            <point x="0.31716" y="0" />
+                            <point x="0.697041" y="0" />
+                            <point x="0.694675" y="0.998115" />
+                            <point x="0.319527" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="946103023563136" speed="5">
+                    <frame duration="1" hotspotX="0.500592" hotspotY="0.500471">
+                        <collision-poly>
+                            <point x="0.31716" y="0" />
+                            <point x="0.697041" y="0" />
+                            <point x="0.694675" y="0.998115" />
+                            <point x="0.319527" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="831798769155638">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Hp1" sid="873249005548819">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="183934027950567" speed="5">
+                    <frame duration="1" hotspotX="0.697917" hotspotY="0.501458" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\Zhizni.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="293111545489990" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\Zhizni.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hp2" sid="420229890809801">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="718053711997169" speed="5">
+                    <frame duration="1" hotspotX="0.590278" hotspotY="0.501458" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\Zhizni.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Hp3" sid="863662410373804">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="916575460802574" speed="5">
+                    <frame duration="1" hotspotX="0.590278" hotspotY="0.501458" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\Zhizni.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseBackground" sid="105903570808729">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable comment="Jenya krutoi" name="IsPause" sid="362801471608070" type="boolean" />
+            </instance-variables>
+            <container>
+                <type>PauseBackground</type>
+                <type>PauseButton</type>
+                <type>PuskButton</type>
+                <type>MenuButton</type>
+                <type>SoundButton</type>
+            </container>
+            <texture />
+        </object-type>
+        <object-type name="MenuButton" sid="314169160364089">
+            <plugin id="Sprite" />
+            <container>
+                <type>PauseBackground</type>
+                <type>PauseButton</type>
+                <type>PuskButton</type>
+                <type>MenuButton</type>
+                <type>SoundButton</type>
+            </container>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="446186783088461" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501279" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\menyu.png">
+                        <collision-poly>
+                            <point x="0.060567" y="0.168798" />
+                            <point x="0.914948" y="0.158568" />
+                            <point x="0.920103" y="0.838875" />
+                            <point x="0.0631443" y="0.856777" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501279">
+                        <collision-poly>
+                            <point x="0.060567" y="0.168798" />
+                            <point x="0.914948" y="0.158568" />
+                            <point x="0.920103" y="0.838875" />
+                            <point x="0.0631443" y="0.856777" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PauseButton" sid="976280886243052">
+            <plugin id="Sprite" />
+            <container>
+                <type>PauseBackground</type>
+                <type>PauseButton</type>
+                <type>PuskButton</type>
+                <type>MenuButton</type>
+                <type>SoundButton</type>
+            </container>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="935224556661700" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501279" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\pauza.png">
+                        <collision-poly>
+                            <point x="0.0554124" y="0.163683" />
+                            <point x="0.921392" y="0.16624" />
+                            <point x="0.917526" y="0.826087" />
+                            <point x="0.0554124" y="0.861893" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PuskButton" sid="216395468962170">
+            <plugin id="Sprite" />
+            <container>
+                <type>PauseBackground</type>
+                <type>PauseButton</type>
+                <type>PuskButton</type>
+                <type>MenuButton</type>
+                <type>SoundButton</type>
+            </container>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="452023393240640" speed="0">
+                    <frame duration="0" hotspotX="0.5" hotspotY="0.501279" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\pusk.png">
+                        <collision-poly>
+                            <point x="0.060567" y="0.168798" />
+                            <point x="0.918814" y="0.161125" />
+                            <point x="0.921392" y="0.859335" />
+                            <point x="0.0670103" y="0.872123" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501279">
+                        <collision-poly>
+                            <point x="0.060567" y="0.168798" />
+                            <point x="0.918814" y="0.161125" />
+                            <point x="0.921392" y="0.859335" />
+                            <point x="0.0670103" y="0.872123" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SoundButton" sid="427755743707551">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Sound" sid="948023019309439" type="number" />
+            </instance-variables>
+            <container>
+                <type>PauseBackground</type>
+                <type>PauseButton</type>
+                <type>PuskButton</type>
+                <type>MenuButton</type>
+                <type>SoundButton</type>
+            </container>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="896346415194254" speed="0">
+                    <frame duration="1" hotspotX="0.44186" hotspotY="0.51049" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\muzyka1.png" />
+                    <frame duration="1" hotspotX="0.44186" hotspotY="0.51049" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\muzyka.png" />
+                    <frame duration="1" hotspotX="0.44186" hotspotY="0.51049" />
+                    <frame duration="1" hotspotX="0.44186" hotspotY="0.51049" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="525893245716218">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="GameOver" sid="921967920441271">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638171640764893" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Михаил\OneDrive\Рабочий стол\6 сем\konets.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="7" />
+        <global-instance type="Mouse" uid="16" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
